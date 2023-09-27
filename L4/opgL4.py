@@ -44,19 +44,23 @@ def write_data():
 
 
 def fibonacci(n):
-    result = 0
     value_one = 0
     value_two = 1
     for i in range(1, n):
         n = value_one + value_two
         value_one = value_two
         value_two = n
-        result += 1
-
         print(value_two)
 
 
 #   fibonacci(7)
+
+def call_sum_two_number():
+    from modL4 import sum_of_numbers
+    print(sum_of_numbers(5,2))
+
+
+call_sum_two_number()
 
 
 
