@@ -1,10 +1,11 @@
 #   Exercise 1
 
 def barcode_loop():
-    barcodes = ["This is the bar code - barcode001", "This is the bar code - barcode002", "This is the bar code - barcode003"]
+    string_ = "This is the bar code - "
+    barcodes = ["barcode001", "barcode002", "barcode003"]
 
     for i in barcodes:
-        print(i)
+        print(string_ + i)
 
 
 #   barcode_loop()
