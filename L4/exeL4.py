@@ -34,3 +34,37 @@ def print_list(list_x):
 #   print_list(list_)
 
 
+list_two = [10, 23, 1, 2, 6, 19]
+
+
+def min_max(lists):
+    min_val = min(lists)
+    max_val = max(lists)
+    return min_val, max_val
+
+
+x, y = min_max(list_two)
+
+
+#   print(x, y)
+
+
+def sum_two(x, y):
+    result = x + y
+    return result
+
+
+def print_new_result():
+    first_par = 10
+    second_par = 20
+    result = sum_two(first_par, second_par)
+
+    print(result)
+
+
+#   print_new_result()
+
+
+from modexeL4 import print_message as pm
+
+pm("hello")
