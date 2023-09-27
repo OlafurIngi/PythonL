@@ -63,8 +63,3 @@ def call_sum_two_number():
 
 call_sum_two_number()
 
-
-
-
-
-
