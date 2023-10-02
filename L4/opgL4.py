@@ -41,7 +41,7 @@ def write_data():
     fileThree.close()
 
 
-#   write_data()
+write_data()
 
 
 def fibonacci(n):
@@ -54,7 +54,7 @@ def fibonacci(n):
         print(value_two)
 
 
-#   fibonacci(7)
+#   fibonacci(10)
 
 def call_sum_two_number():
     from modL4 import sum_of_numbers
