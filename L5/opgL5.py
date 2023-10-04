@@ -43,12 +43,14 @@ def guess_the_number():
 
 def multi_table():
     for x in range(0, 11):
-        for y in range(0, 11):
+        print("{0} tabellen".format(x))
+        for y in range(1, 11):
             print(x * y, end=" \t ")
+        print()
 
 
 
-#   multi_table()
+multi_table()
 
 
 def keep_stock():
@@ -97,10 +99,10 @@ def keep_stock_mod():
 #   keep_stock_mod()
 
 
-def cond_file_process():
-    
+#def cond_file_process():
 
 
 
 
-cond_file_process()
+
+#cond_file_process()
