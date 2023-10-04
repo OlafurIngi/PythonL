@@ -67,7 +67,7 @@ def keep_stock():
         print("for week {0} the new inventory is {1}".format(week, inventory_level), "\n")
 
 
-keep_stock()
+#   keep_stock()
 
 def keep_stock_mod():
     weekly_manufacturing = 50
@@ -86,7 +86,7 @@ def keep_stock_mod():
 
         total_inventory += inventory_level
 
-        if week % 50 == 0:
+        if week % 500 == 0:
             print("the weekly shipped for week {0} is {1}".format(week, weekly_shipped))
             print("for week {0} the old inventory is {1}".format(week, old_inv))
             print("for week {0} the new inventory is {1}".format(week, inventory_level))
@@ -95,13 +95,34 @@ def keep_stock_mod():
             print("The average inventory is {0}".format(total_inventory / week), "\n")
 
 
-keep_stock_mod()
+#   keep_stock_mod()
 
 
-#def cond_file_process():
+def cond_file_process():
+    open_file = open("Products.txt", "r", encoding="latin-1")
+    reorder_count = 0
+
+    line_ = open_file.readline()
+    while line_ != "":
+        columns = line_.split(",")
+
+        units_in_stock = int(columns[6])
+        reorder_level = int(columns[8])
+
+        if units_in_stock < reorder_level:
+            reorder_count += 1
+
+        line_ = open_file.readline()
+
+    open_file.close()
+
+    print(f"Number of products that need to be reordered: {reorder_count}")
+
+
+cond_file_process()
 
 
 
 
 
-#cond_file_process()
+
