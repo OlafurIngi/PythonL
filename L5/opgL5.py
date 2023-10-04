@@ -94,8 +94,10 @@ def keep_stock_mod():
             print("The average inventory is {0}".format(total_inventory / week), "\n")
 
 
-keep_stock_mod()
+#   keep_stock_mod()
 
+
+def cond_file_process():
 
 
 
