@@ -73,6 +73,7 @@ def keep_stock_mod():
     import random
     inventory_level = 10
     stock_outs = 0
+    total_inventory = 0
     for week in range(1, 1001):
         weekly_shipped = random.randint(40, 60)
         old_inv = inventory_level + weekly_manufacturing
@@ -81,15 +82,20 @@ def keep_stock_mod():
         if inventory_level < 0:
             inventory_level = 0
             stock_outs = stock_outs + 1
+
+        total_inventory += inventory_level
+
         if week % 50 == 0:
             print("the weekly shipped for week {0} is {1}".format(week, weekly_shipped))
             print("for week {0} the old inventory is {1}".format(week, old_inv))
             print("for week {0} the new inventory is {1}".format(week, inventory_level))
             print("The amount of stock outs is {0}".format(stock_outs))
-            print("The average inventory is {0}".format(avg_inventory), "\n")
+            print("The running total is {0}".format(total_inventory))
+            print("The average inventory is {0}".format(total_inventory / week), "\n")
 
 
 keep_stock_mod()
+
 
 
 
