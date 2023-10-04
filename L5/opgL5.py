@@ -49,8 +49,7 @@ def multi_table():
         print()
 
 
-
-multi_table()
+#   multi_table()
 
 
 def keep_stock():
@@ -68,7 +67,7 @@ def keep_stock():
         print("for week {0} the new inventory is {1}".format(week, inventory_level), "\n")
 
 
-#   keep_stock()
+keep_stock()
 
 def keep_stock_mod():
     weekly_manufacturing = 50
@@ -96,7 +95,7 @@ def keep_stock_mod():
             print("The average inventory is {0}".format(total_inventory / week), "\n")
 
 
-#   keep_stock_mod()
+keep_stock_mod()
 
 
 #def cond_file_process():
